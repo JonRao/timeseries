@@ -17,13 +17,15 @@ while dt < end:
     dt += step
 
 # Second way with Pandas
-result_pd = pd.date_range('2016-8-15', periods = 5)
+result_pd = pd.date_range('2016-8-15', periods = 100)
 
 # Generate timeseries
-ts = pd.Series(np.random.randn(5), index = result_pd)
+ts = pd.Series(np.random.randn(100), index = result_pd)
 
 
 # Method Collection
 
 # Slicing: truncate
-ts.truncate(after = '2016-08-18')
+ts.truncate(after = '2016-11-9')
+
+dir(pd)
